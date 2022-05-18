@@ -1,0 +1,8 @@
+[X1,X2]=meshgrid(-5:0.1:5,-5:0.1:5);
+contour(X1,X2,f15(X1,X2))
+hold on
+plot(X1(1,:),(1-9*X1(1,:))/4)
+figure
+surf(X1,X2,f15(X1,X2))
+%grafic punctul de minim este in (1,0)
+syms x1
